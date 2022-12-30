@@ -1,0 +1,225 @@
+:root {
+    --body-bg-color: #E1E1E6;
+    --text-color: #dedce3;
+    --title-color: #6C63FF;
+    ;
+    --form-color: #150b2f;
+    --bg-button-color: #8257e5;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    background-color: var(--body-bg-color);
+
+    display: grid;
+    grid-template-areas:
+        "header aside"
+        "main aside"
+        "main aside";
+
+    grid-template-rows: 70px 1fr 40px;
+    grid-template-columns: 1fr 50%;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+header {
+    grid-area: header;
+
+
+
+    display: flex;
+    justify-content: space;
+    align-items: center;
+    padding: 0 8px;
+
+
+}
+
+main {
+    grid-area: main;
+
+
+
+
+
+}
+
+aside {
+    grid-area: aside;
+    background-color: blue;
+    border-radius: 10px;
+
+    background-image: url(/img/Foguete\ de\ desenhos\ animados\ isolado\ ilustração\ vetorial\ _\ Vetor\ Premium.jpg);
+    
+    
+    
+}
+
+aside:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, .19), 0 6px 6px rgba(0, 0, .23);
+    transition: all 10s cubic-bezier(.25, .8, .25, 1);
+}
+
+aside {
+    background-image: linear-gradient;
+}
+
+aside:hover {
+    background-position: right center;
+}
+
+
+h2 {
+    color: var(--title-color);
+    padding: 0 80px;
+    display: flex;
+
+}
+
+h3 {
+    color: var(--form-color);
+    padding: 0 8px;
+
+
+}
+
+h4 {
+    color: var(--form-color);
+    padding: 0px;
+
+}
+
+h1 {
+    color: var(--form-color);
+
+}
+
+.inserir-e-enviar-email {
+    margin-top: 10%;
+    padding: 0 50px;
+
+    justify-content: column;
+}
+
+input {
+
+    border: 4px solid var(--form-color);
+    border-radius: 10px 10px 10px 10px;
+    width: 180px;
+    height: 29px;
+
+    font-size: 18px;
+
+    padding-left: 10px;
+
+
+}
+
+.whatsapp {
+    border: 4px solid var(--form-color);
+    border-radius: 10px 10px 10px 10px;
+    width: 200px;
+    height: 50px;
+    color: var(--text-color);
+
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    padding-left: 10px;
+
+    box-shadow: 0 0 20px rgb(238, 238, 238);
+
+
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    top: 100px;
+}
+
+.whatsapp:hover {
+    box-shadow: 0 10px 20px rgb(18, 17, 17), 0 6px 6px rgba(0, 0, .23);
+
+}
+
+.whatsapp {
+    background-image: linear-gradient(to right, rgb(4, 213, 250)0%, rgb(47, 34, 190) 51%, rgb(8, 250, 250)100%);
+}
+
+.whatsapp:hover {
+    background-position: right center;
+}
+
+.btnenviar {
+    border: 4px solid white;
+    border-radius: 10px 10px 10px 10px;
+    width: 200px;
+    height: 50px;
+    color: white;
+
+    justify-content: center;
+
+    margin-right: 10%;
+
+    padding: 2%;
+
+    text-align: center;
+    transition: .5s;
+    background-size: 50% auto;
+    box-shadow: 0 0 20px rgb(238, 238, 238);
+
+
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    top: 100px;
+
+
+}
+
+.btnenviar:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, .19), 0 6px 6px rgba(0, 0, .23);
+
+}
+
+.btnenviar {
+    background-image: linear-gradient(to right, rgb(27, 54, 174)0%, rgb(36, 146, 189) 51%, rgb(27, 54, 174)100%);
+}
+
+.btnenviar:hover {
+    background-position: right center;
+}
+
+.countdow-conteiner{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdow-elemento{
+    text-align: center;
+}
+
+.countdow-span{
+    font-size: 1.5rem;
+}
+
+.box{
+    width: 300px;
+    right: 100px;
+    border-radius: 30px;
+    background-color: #d7d2e5;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-right: 1.5rem;
+    margin: 5px 10px 15px 20px;
+    
+}
